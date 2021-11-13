@@ -9,12 +9,13 @@
     --benefits-section-bg-color: #E5E5E5;
     --team-section-bg-color: #F5F4FA;
     --footer-bg-color: #2F303A;
+    --body-bg-color: #FFFFFF;
 }
 
 
 body {
     color: var(--primary-text-color);
-    background-color: var(--primary-bg-color);
+    background-color: var(--body-bg-color);
     
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
@@ -36,6 +37,7 @@ a {
 }
 
 .section {
+    background-color: ;
     padding-top: 94px;
     padding-bottom: 94px;
     width: 1600px;
@@ -209,8 +211,6 @@ header {
     color: var(--white-text-color);
     background-color: #188CE8;
 } */
-
-
 
 
 
