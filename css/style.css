@@ -37,7 +37,6 @@ a {
 }
 
 .section {
-    background-color: ;
     padding-top: 94px;
     padding-bottom: 94px;
     width: 1600px;
@@ -88,18 +87,6 @@ header {
     letter-spacing: 0.03em;
 }
 
-.header-nav {
-
-}
-
-.header-list {
-
-} 
-
-.header-item {
-
-}
-
 .header-link {
     color: var(--primary-text-color);
 
@@ -116,13 +103,6 @@ header {
     background-color: var(--accent-text-color);
 }
 
-.header-second-list {
-
-}
-
-.header-second-item {
-
-}
 
 .header-mail {
     color: var(--second-text-color);
@@ -215,9 +195,7 @@ header {
 
 
 /*-------Секція 2. Переваги-------------*/
-.benefits-section {
-background-color: black;
-}
+
 
 .benefits-list {
     margin-bottom: 94px;
@@ -279,14 +257,6 @@ background-color: black;
 .work-list {
 margin-top: 0px;
 padding-left: 0px;
-}
-
-.work-item {
-
-}
-
-.work-link {
-
 }
 
 .work-img {
@@ -366,14 +336,6 @@ padding-bottom: 30px;
     background-color: #E5E5E5;
 }
 
-.main-list {
-
-}
-
-.main-item {
-
-}
-
 .main-button {
     color: var(--primary-text-color);
     background-color: #F5F4FA;
@@ -400,17 +362,7 @@ padding-bottom: 30px;
 
 
 /*----------------Список картинок-------------------*/
-.main-second-list {
 
-}
-
-.main-second-item {
-
-}
-
-.main-img {
-
-}
 
 .main-title {
     color: var(--primary-text-color);
@@ -465,9 +417,6 @@ footer {
     margin-bottom: 20px;
 }
 
-.footer-adress {
-
-}
 
 .footer-list {
 margin-top: 0px;
@@ -475,9 +424,6 @@ margin-bottom: 0px;
 padding-left: 0px;
 }
 
-.footer-item {
-
-}
 
 .footer-link-map {
     color: var(--white-text-color);
