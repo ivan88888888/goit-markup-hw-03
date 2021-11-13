@@ -3,21 +3,13 @@
     --second-text-color: #757575;
     --white-text-color: #FFFFFF;
     --accent-text-color: #2196F3;
-    --primary-bg-color: #FFFFFF;
-    --footer-bg-color: #2F303A;
+
     --header-bg-color: #FFFFFF;
+    --hero-bg-color: #2F303A;
+    --benefits-section-bg-color: #E5E5E5;
+    --team-section-bg-color: #F5F4FA;
+    --footer-bg-color: #2F303A;
 }
-
-/* Основний колір тексту #212121; */
-/* Другорядний колір тексту #757575; */
-/* Білий колір тексту #FFFFFF; */
-/* Акцентований колір тексту #2196F3; */
-
-/* Хедер фон #FFFFFF; */
-/* Герой фон #2F303A; */
-/* Футер фон #2F303A; */
-/* Чим ми займаємся фон #E5E5E5; */
-/* Наша команда фон #F5F4FA; */
 
 
 body {
@@ -43,6 +35,12 @@ a {
     text-decoration: none;
 }
 
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    width: 1600px;
+}
+
 
 /*----------CONTEINER--------------------*/
 .conteiner {
@@ -53,33 +51,16 @@ a {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
+    border: 1px solid tomato;
 }
-
-
-/*------ГЛОБАЛЬНЕ СКИДАННЯ СТИЛІВ---------*/
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul {
-    margin: 0px;
-    padding: 0px;
-}  
-
-
-
-
 
 
 
 /*----------HEADER----------------------*/
 
 header {
-    color: var(--primary-text-color);
-    background-color: var(--primary-bg-color);
+    color: var(---text-color);
+    background-color: var(--header-bg-color);
     border-bottom: 1px solid #ECECEC;
 
     width: 1600px;
@@ -181,7 +162,7 @@ header {
 /*-------Портфоліо кнопки---------------*/
 
 .hero-section {
-    background-color: var(--footer-bg-color);
+    background-color: var(--hero-bg-color);
 
     width: 1600px;
 
@@ -235,30 +216,35 @@ header {
 
 /*-------Секція 2. Переваги-------------*/
 .benefits-section {
-background-color: #E5E5E5;
+background-color: black;
 }
 
 .benefits-list {
     margin-bottom: 94px;
+    margin-top: 0px;
+    padding-left: 0px;
 
 }
 
 .benefits-item {
+    width: 270px;
 
 }
 
 .benefits-title {
     color: var(--primary-text-color);
+    background-color: #2196F3;
 
     font-weight: 700;
     font-size: 14px;
-    line-height: 1.14;
+    line-height: 1.145;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
-    wi
+    width: 270px;
 
     margin-bottom: 10px;
+    margin-top: 0px;
 }
 
 .benefits-text {
@@ -266,11 +252,13 @@ background-color: #E5E5E5;
 
     font-weight: 400;
     font-size: 14px;
-    line-height: 1.71;
+    line-height: 1.8;
     letter-spacing: 0.03em;
+    width: 270px;
+
+    margin-top: 0px;
+    margin-bottom: 94px;
 }
-
-
 
 
 
@@ -278,17 +266,19 @@ background-color: #E5E5E5;
 .work-title {
     color: var(--primary-text-color);
 
-font-weight: 700;
-font-size: 36px;
-line-height: 1.16;
-text-align: center;
-letter-spacing: 0.03em;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
 
-margin-bottom: 50px;    
+    margin-bottom: 50px;
+    margin-top: 0px;   
 }
 
 .work-list {
-
+margin-top: 0px;
+padding-left: 0px;
 }
 
 .work-item {
@@ -300,7 +290,7 @@ margin-bottom: 50px;
 }
 
 .work-img {
-    
+    margin-bottom: 94px;
 }
 
 
@@ -309,7 +299,7 @@ margin-bottom: 50px;
 
 /*-----------Секція 3. Наша команда-------*/
 .team-section {
-    background-color: #F5F4FA;
+    background-color: var(--team-section-bg-color);
 }
 
 .team-title {
@@ -322,15 +312,19 @@ text-align: center;
 letter-spacing: 0.03em;
 
 margin-bottom: 50px;
+margin-top: 0px;
 }
 
 
 .team-list {
-
+margin-top: 0px;
+padding-left: 0px;
+margin-bottom: 0px;
 }
 
 .team-item {
-
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
 }
 
 .team-foto {
@@ -347,6 +341,7 @@ margin-bottom: 30px;
     letter-spacing: 0.03em;
 
     margin-bottom: 10px;
+    margin-top: 0px;
 }
 
 .team-text {
@@ -357,8 +352,9 @@ font-size: 16px;
 line-height: 1.18;
 
 letter-spacing: 0.03em;
-
-margin-bottom: 30px;
+margin-top: 0px;
+margin-bottom: 0px;
+padding-bottom: 30px;
 }
 
 
@@ -433,9 +429,11 @@ margin-bottom: 30px;
 
 /*----------------FOOTER-------------------*/
 footer {
-    background-color: #2F303A;
+    background-color: var(--footer-bg-color);
 
     width: 1600px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer-logo {
@@ -449,7 +447,6 @@ footer {
     letter-spacing: 0.03em;
     display: inline-block;
     margin-bottom: 20px;
-    padding-top: 60px;
 }
 
 .footer-second-logo {
@@ -473,7 +470,9 @@ footer {
 }
 
 .footer-list {
-
+margin-top: 0px;
+margin-bottom: 0px;
+padding-left: 0px;
 }
 
 .footer-item {
@@ -529,19 +528,10 @@ footer {
     letter-spacing: 0.03em;
 
     display: inline-block;
-    padding-bottom: 60px;
 }
 
 .footer-link-tel:hover,
 .footer-link-tel:focus {
     color: var(--white-text-color);
     background-color: var(--accent-text-color)
-}
-
-
-.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-
-    width: 1600px;
 }
