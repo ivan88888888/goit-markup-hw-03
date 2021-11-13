@@ -6,7 +6,7 @@
 
     --header-bg-color: #FFFFFF;
     --hero-bg-color: #2F303A;
-    --benefits-section-bg-color: #E5E5E5;
+    --benefits-section-bg-color: #FFFFFF;
     --team-section-bg-color: #F5F4FA;
     --footer-bg-color: #2F303A;
     --body-bg-color: #FFFFFF;
@@ -190,17 +190,19 @@ header {
 .hero-button:focus {
     color: var(--white-text-color);
     background-color: #188CE8;
-} */
-
+}
 
 
 /*-------Секція 2. Переваги-------------*/
-
+.benefits-section {
+background-color: var(--benefits-section-bg-color);
+}
 
 .benefits-list {
     margin-bottom: 94px;
     margin-top: 0px;
     padding-left: 0px;
+    padding-right: 0px;
 
 }
 
@@ -211,8 +213,6 @@ header {
 
 .benefits-title {
     color: var(--primary-text-color);
-    background-color: #2196F3;
-
     font-weight: 700;
     font-size: 14px;
     line-height: 1.145;
