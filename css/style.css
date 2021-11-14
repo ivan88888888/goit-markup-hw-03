@@ -10,6 +10,8 @@
     --team-section-bg-color: #F5F4FA;
     --footer-bg-color: #2F303A;
     --body-bg-color: #FFFFFF;
+
+    --portfolio-main-bg-color: #FFFFFF;
 }
 
 
@@ -141,7 +143,6 @@ header {
 
 /*-----------MAIN-----------------------*/
 /*-------Секція 1. HERO----------------*/
-/*-------Портфоліо кнопки---------------*/
 
 .hero-section {
     background-color: var(--hero-bg-color);
@@ -332,8 +333,14 @@ padding-bottom: 30px;
 
 /*----------------MAIN PORTFOLIO-------------------*/
 /*----------------Портфоліо кнопки-----------------*/
-.main {
-    background-color: #E5E5E5;
+main {
+    background-color: var(--portfolio-main-bg-color);
+}
+
+.main-list {
+    margin-top: 0px;
+    margin-bottom: 50px;
+    padding: 0px;
 }
 
 .main-button {
@@ -350,6 +357,11 @@ padding-bottom: 30px;
     letter-spacing: 0.03em;
 
     cursor: pointer;
+
+    border: none;
+
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
 }
 
 .main-button:hover,
@@ -358,14 +370,30 @@ padding-bottom: 30px;
     background-color: var(--accent-text-color);
 }
 
+.main-second-list {
+    padding: 0px;
+    margin: 0px;
+}
 
+.main-second-item {
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
+
+    padding-bottom: 20px;
+}
 
 
 /*----------------Список картинок-------------------*/
 
+.main-img {
+    margin-bottom: 20px;
+}
 
 .main-title {
     color: var(--primary-text-color);
+    margin-top: 0px;
+    margin-bottom: 4px;
+    padding-left: 24px;
 }
 
 .main-span {
@@ -374,6 +402,9 @@ padding-bottom: 30px;
 
 .main-text {
     color: var(--second-text-color);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 24px;
 }
 
 
@@ -456,7 +487,7 @@ padding-left: 0px;
 
     display: inline-block;
     margin-bottom: 9px;
-    }
+}
 
 .footer-link-mail:hover,
 .footer-link-mail:focus {
