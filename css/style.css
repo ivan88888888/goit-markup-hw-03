@@ -44,7 +44,6 @@ a {
     width: 1600px;
 }
 
-
 /*----------CONTEINER--------------------*/
 .conteiner {
     margin-right: auto;
@@ -54,7 +53,6 @@ a {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    border: 1px solid tomato;
 }
 
 
@@ -69,6 +67,12 @@ header {
     width: 1600px;
 }
 
+.div-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
 .header-logo {
     color: var(--accent-text-color);
 
@@ -77,6 +81,8 @@ header {
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
+
+    margin-right: 93px;
 }
 
 .header-second-logo {
@@ -89,6 +95,20 @@ header {
     letter-spacing: 0.03em;
 }
 
+.header-list {
+    display: flex;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.header-item {
+    margin-right: 50px;
+}
+
+.header-item:last-child {
+    margin-right: 0px;
+}
+
 .header-link {
     color: var(--primary-text-color);
 
@@ -97,14 +117,34 @@ header {
     line-height: 1.14;
     letter-spacing: 0.02em;
 
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .header-link:hover,
 .header-link:focus {
-    color: var(--white-text-color);
-    background-color: var(--accent-text-color);
+    color: var(--accent-text-color);
 }
 
+.link.current {
+    color: var(--accent-text-color);
+}
+
+.header-second-list {
+display: flex;
+margin-top: 0px;
+margin-bottom: 0px;
+margin-left: auto;
+}
+
+.header-second-item {
+    margin-right: 50px;
+}
+
+.header-second-item:last-child {
+    margin-right: 0px;
+}
 
 .header-mail {
     color: var(--second-text-color);
@@ -117,8 +157,8 @@ header {
 
 .header-mail:hover,
 .header-mail:focus {
-    color: var(--white-text-color);
-    background-color: var(--accent-text-color);
+    color: var(--accent-text-color);
+
 }
 
 .header-tel {
@@ -133,15 +173,15 @@ header {
 
 .header-tel:hover,
 .header-tel:focus {
-    color: var(--white-text-color);
-    background-color: var(--accent-text-color);
+    color: var(--accent-text-color);
+
 }
 
 
 
 
 
-/*-----------MAIN-----------------------*/
+/* MAIN */
 /*-------Секція 1. HERO----------------*/
 
 .hero-section {
@@ -168,7 +208,7 @@ header {
     width: 696px;
     margin: 0 auto;
     margin-bottom: 30px;
-    }
+}
 
 .hero-button {
     color: var(--white-text-color);
@@ -178,6 +218,7 @@ header {
     font-size: 16px;
     line-height: 1.875;
     letter-spacing: 0.06em;
+
     display: inline-block;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border: 0px;
@@ -205,12 +246,18 @@ background-color: var(--benefits-section-bg-color);
     padding-left: 0px;
     padding-right: 0px;
 
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .benefits-item {
     width: 270px;
-
 }
+
+.benefits-item:not(:last-child) {
+    margin-right: 30px;
+}
+
 
 .benefits-title {
     color: var(--primary-text-color);
@@ -221,7 +268,6 @@ background-color: var(--benefits-section-bg-color);
     text-transform: uppercase;
 
     width: 270px;
-
     margin-bottom: 10px;
     margin-top: 0px;
 }
@@ -233,8 +279,8 @@ background-color: var(--benefits-section-bg-color);
     font-size: 14px;
     line-height: 1.8;
     letter-spacing: 0.03em;
+    
     width: 270px;
-
     margin-top: 0px;
     margin-bottom: 94px;
 }
@@ -331,18 +377,39 @@ padding-bottom: 30px;
 
 
 
-/*----------------MAIN PORTFOLIO-------------------*/
-/*----------------Портфоліо кнопки-----------------*/
+/* PORTFOLIO */
+
 main {
     background-color: var(--portfolio-main-bg-color);
 }
 
-.main-list {
+.div-portfolio {
+}
+
+.h {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* ul кнопок */
+.main-list { 
     margin-top: 0px;
     margin-bottom: 50px;
     padding: 0px;
+    display: flex;
 }
 
+/* li кнопок */
+.main-item {
+}
+
+/* Кнопки */
 .main-button {
     color: var(--primary-text-color);
     background-color: #F5F4FA;
@@ -364,47 +431,63 @@ main {
     border-radius: 4px;
 }
 
+/* Ховер, фокус кнопок*/
 .main-button:hover,
 .main-button:focus {
     color: var(--white-text-color);
     background-color: var(--accent-text-color);
 }
 
+/* ul картинок */
 .main-second-list {
     padding: 0px;
     margin: 0px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
+/* li (картинок, заголовків, абзаців */
 .main-second-item {
-    border: 1px solid #EEEEEE;
-    box-sizing: border-box;
-
     padding-bottom: 20px;
+
+    width: 370px;
+    margin-right: 10px;
 }
 
+.main-second-item:nth-child(n+7) {
+    margin-bottom: 0px;
+}
 
-/*----------------Список картинок-------------------*/
+.main-second-item:nth-child(3n) {
+    margin-right: 0px;
+}
 
+/* Картинки */
 .main-img {
     margin-bottom: 20px;
 }
 
+/* h2 */
 .main-title {
     color: var(--primary-text-color);
     margin-top: 0px;
     margin-bottom: 4px;
     padding-left: 24px;
+    padding-right: 24px;
 }
 
+/* span */
 .main-span {
     color: var(--primary-text-color);
 }
 
+/* p */
 .main-text {
     color: var(--second-text-color);
     margin-top: 0px;
     margin-bottom: 0px;
     padding-left: 24px;
+    padding-right: 24px;
 }
 
 
@@ -471,8 +554,7 @@ padding-left: 0px;
 
 .footer-link-map:hover,
 .footer-link-map:focus {
-    color: var(--white-text-color);
-    background-color: var(--accent-text-color)
+    color: var(--accent-text-color)
 }
 
 .footer-link-mail {
@@ -491,8 +573,7 @@ padding-left: 0px;
 
 .footer-link-mail:hover,
 .footer-link-mail:focus {
-    color: var(--white-text-color);
-    background-color: var(--accent-text-color);
+    color: var(--accent-text-color);
 }
 
 .footer-link-tel {
@@ -509,6 +590,5 @@ padding-left: 0px;
 
 .footer-link-tel:hover,
 .footer-link-tel:focus {
-    color: var(--white-text-color);
-    background-color: var(--accent-text-color)
+    color: var(--accent-text-color);
 }
