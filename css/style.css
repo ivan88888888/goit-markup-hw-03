@@ -41,7 +41,6 @@ a {
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
-    width: 1600px;
 }
 
 /*----------CONTEINER--------------------*/
@@ -63,8 +62,6 @@ header {
     color: var(---text-color);
     background-color: var(--header-bg-color);
     border-bottom: 1px solid #ECECEC;
-
-    width: 1600px;
 }
 
 .div-header {
@@ -186,8 +183,6 @@ margin-left: auto;
 
 .hero-section {
     background-color: var(--hero-bg-color);
-
-    width: 1600px;
 
     padding-top: 200px;
     padding-bottom: 200px;
@@ -497,7 +492,6 @@ main {
 footer {
     background-color: var(--footer-bg-color);
 
-    width: 1600px;
     padding-top: 60px;
     padding-bottom: 60px;
 }
